@@ -1,0 +1,21 @@
+query Promotions {
+    promotions(
+        options: { skip: null, take: null, sort: null, filter: null, filterOperator: null }
+    ) {
+        totalItems
+        items {
+            id
+            createdAt
+            updatedAt
+            startsAt
+            endsAt
+            couponCode
+            perCustomerUsageLimit
+            usageLimit
+            name
+            description
+            enabled
+            customFields
+        }
+    }
+}
